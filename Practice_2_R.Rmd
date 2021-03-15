@@ -271,6 +271,7 @@ DF_vacuum_cleaners$Firm <- fct_lump(DF_vacuum_cleaners$Firm, n = 7, other_level 
 
 # группы вынесены на отдельные панели графика
 xyplot(Rank ~ Price | Firm, data = DF_vacuum_cleaners,
+ main = 'График разброса общего рейтинга робота-пылесоса от его стоимости по самым популярным фирмам-производителям',
  ylab = 'Рейтинг робота-пылесоса',
  xlab = 'Цена робота-пылесоса, в рублях') 
 ```
